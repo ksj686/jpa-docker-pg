@@ -94,6 +94,15 @@ spring jpa, docker, postgre를 활용한 프로젝트
       email VARCHAR(50) PRIMARY KEY NOT NULL,  <br>
       name VARCHAR(50),  <br>
       create_date TIMESTAMP  <br>
-    );  <br>
+    );  
+<br><br>
+CREATE TABLE hotel_info (  <br>
+  hotel_id VARCHAR(50) PRIMARY KEY,  <br>
+  nm VARCHAR(50),  <br>
+  year INTEGER,  <br>
+  grade VARCHAR(2),  <br>
+  created TIMESTAMP,  <br>
+  modified TIMESTAMP  <br>
+);
 
 </details>
