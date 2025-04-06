@@ -87,3 +87,13 @@ spring jpa, docker, postgre를 활용한 프로젝트
   SQL 실행 - GRANT ALL PRIVILEGES ON DATABASE app_db TO app_user;
 </details>
 
+<details>
+  <summary>초기 실행 sql</summary>
+  <p>
+  CREATE TABLE IF NOT EXISTS "user" (
+    email VARCHAR(50) PRIMARY KEY NOT NULL,
+    name VARCHAR(50),
+    create_date TIMESTAMP
+  );
+  </p>
+</details>
