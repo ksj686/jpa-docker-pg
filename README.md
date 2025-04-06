@@ -64,3 +64,26 @@ spring jpa, docker, postgre를 활용한 프로젝트
 3. 스키마, 테이블 등 구조 확인 가능
 
 </details>
+
+<details>
+  <summary>mysql, postgre 차이점</summary>
+
+## ❗차이점 설명
+
+| 항목 | MySQL | PostgreSQL |
+|------|-------|-------------|
+| 사용자 접속 제어 | `'user'@'localhost'`, `'user'@'%'` | **PostgreSQL은 `pg_hba.conf`로 제어** |
+| 문자셋 지정 | `CHARACTER SET utf8mb4` | PostgreSQL은 기본이 UTF-8 (지정 필요 거의 없음) |
+| 권한 부여 방식 | `GRANT ... ON db.*` | `GRANT ... ON DATABASE db` |
+
+> PostgreSQL은 호스트 구분 없이 `pg_hba.conf` 파일에서 접속 방식 설정하므로, SQL 자체에는 `'@localhost'` 같은 구문이 없음.
+
+---
+
+</details>
+
+<details>
+  <summary>초기 실행 sql</summary>
+  SQL 실행 - GRANT ALL PRIVILEGES ON DATABASE app_db TO app_user;
+</details>
+
