@@ -93,19 +93,19 @@ spring jpa, docker, postgre를 활용한 프로젝트
 <details>
   <summary>db 테이블 생성</summary>
 
-  CREATE TABLE IF NOT EXISTS "users" (  -- user는 postgre에서 예약어라 users로 변경
-    email VARCHAR(50) PRIMARY KEY NOT NULL,
-    name VARCHAR(50),  
-    create_date TIMESTAMP  
-  );  
+    CREATE TABLE IF NOT EXISTS "users" (  -- user는 postgre에서 예약어라 users로 변경
+      email VARCHAR(50) PRIMARY KEY NOT NULL,
+      name VARCHAR(50),  
+      create_date TIMESTAMP  
+    );  
 
-  CREATE TABLE hotel_info (  
-    hotel_id VARCHAR(50) PRIMARY KEY,  
-    nm VARCHAR(50),  
-    year INTEGER,
-    grade VARCHAR(2),
-    created TIMESTAMP,
-    modified TIMESTAMP
-  );
+    CREATE TABLE hotel_info (  
+      hotel_id VARCHAR(50) PRIMARY KEY,  
+      nm VARCHAR(50),  
+      year INTEGER,
+      grade VARCHAR(2),
+      created TIMESTAMP,
+      modified TIMESTAMP
+    );
 
 </details>
