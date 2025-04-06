@@ -89,11 +89,11 @@ spring jpa, docker, postgre를 활용한 프로젝트
 
 <details>
   <summary>db 테이블 생성</summary>
-  <p>
-    CREATE TABLE IF NOT EXISTS "user" (
-      email VARCHAR(50) PRIMARY KEY NOT NULL,
-      name VARCHAR(50),
-      create_date TIMESTAMP
-    );
-  </p>
+<br>
+    CREATE TABLE IF NOT EXISTS "user" (  <br>
+      email VARCHAR(50) PRIMARY KEY NOT NULL,  <br>
+      name VARCHAR(50),  <br>
+      create_date TIMESTAMP  <br>
+    );  <br>
+
 </details>
