@@ -1,1 +1,6 @@
 .env
+jpa-01/.classpath
+jpa-01/.project
+jpa-01/.settings
+jpa-01/bin/*
+jpa-01/target/*
