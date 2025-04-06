@@ -90,7 +90,7 @@ spring jpa, docker, postgre를 활용한 프로젝트
 <details>
   <summary>db 테이블 생성</summary>
 <br>
-    CREATE TABLE IF NOT EXISTS "user" (  <br>
+    CREATE TABLE IF NOT EXISTS "users" (  -- user는 postgre에서 예약어라 users로 변경 <br>
       email VARCHAR(50) PRIMARY KEY NOT NULL,  <br>
       name VARCHAR(50),  <br>
       create_date TIMESTAMP  <br>
