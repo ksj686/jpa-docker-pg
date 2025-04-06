@@ -1,5 +1,5 @@
 # jpa-docker-pg
-spring jpa, docker, postgre를 활용한 프로젝트
+spring jpa, docker, postgre를 활용한 미니 프로젝트
 
 <details>
   <summary>.yml 파일 설정</summary>
