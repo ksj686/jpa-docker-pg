@@ -14,7 +14,8 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 
 <details>
   <summary>docker 명령어 모음</summary>
-  <사용하는 명령어><br>
+  
+  <사용하는 명령어>
   docker-compose up -d .yml 파일 기반 설치
   <br> docker start postgres15_6 pgadmin 컨테이너(postgres15_6,  pgadmin) 실행
   <br> docker stop postgres15_6 pgadmin 컨테이너 중단
