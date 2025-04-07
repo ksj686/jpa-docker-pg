@@ -37,12 +37,12 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 <details>
   <summary>pgAdmin에서 PostgreSQL 서버 연결하는 방법</summary>
 
-    ✅ pgAdmin에서 서버 추가
+  ✅ pgAdmin에서 서버 추가
     
     1. 첫 화면에서 새 서버 추가
     2. 팝업창 뜨면 General(일반) 탭에서 이름 항목 자유롭게 채우기. ex) local-postgres
     
-    🔌 Connection 탭
+  🔌 Connection 탭
     
   | 항목 | 값 |
   |------|----|
@@ -55,7 +55,7 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
     
     ※ 위 값들은 `.env` 파일 또는 `docker-compose.yml`의 `environment:` 아래 설정한 값.
         
-    🔗 연결 후
+  🔗 연결 후
     
     1. 왼쪽 트리에서 방금 만든 `local-postgres` 클릭
     2. `Databases > mydb > Schemas > public > Tables` 로 내려가면
