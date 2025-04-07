@@ -15,7 +15,7 @@ public class UserSaveMain {
         try {
             transaction.begin();
             User user = new User("user@user.com", "user", LocalDateTime.now());
-            entityManager.persist(user);
+            entityManager.persist(user); // persist 메소드 호출하면 파라미터가 전달한 객체가 DB에 저장됨
             transaction.commit();
         } catch (Exception ex) {
             ex.printStackTrace();
