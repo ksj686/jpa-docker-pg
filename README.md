@@ -1,6 +1,6 @@
 <h2 id=1>🎯 프로젝트 소개</h2>
 
-Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
+Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트(진행중)
 
 <h2 id=2>🎯 준비사항, 진행 과정 중 tip</h2>
 
