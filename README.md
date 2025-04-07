@@ -36,6 +36,7 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 
 <details>
   <summary>pgAdmin에서 PostgreSQL 서버 연결하는 방법</summary>
+  <br>
 
   ✅ pgAdmin에서 서버 추가
     
