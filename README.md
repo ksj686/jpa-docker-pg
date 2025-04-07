@@ -7,9 +7,9 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 <details>
   <summary>.yml 파일 설정</summary>
   
-  - postgres:15 → 항상 최신 15버전으로 자동 업데이트됨 (가끔 비추천)   
-  - postgres:15.6 → 고정 버전.
-  - 비밀번호 정보가 들어간 .env 파일은 .gitignore에 추가해서 별도로 관리하기.  <br>
+    - postgres:15 → 항상 최신 15버전으로 자동 업데이트됨 (가끔 비추천)   
+    - postgres:15.6 → 고정 버전.
+    - 비밀번호 정보가 들어간 .env 파일은 .gitignore에 추가해서 별도로 관리하기.
 </details>
 
 <details>
@@ -66,7 +66,7 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 <details>
   <summary>mysql, postgre 차이점</summary>
 
-    ## ❗차이점 설명
+    ❗차이점 설명
   
     | 항목 | MySQL | PostgreSQL |
     |------|-------|-------------|
