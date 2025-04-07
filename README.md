@@ -23,54 +23,46 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
     docker-compose down 컨테이너 중지 (.yml 파일이 있는 경로에서 실행)
     docker-compose down -v 볼륨 포함 삭제
     docker-compose down --rmi all -v 이미지까지 삭제
-    <br>
+    
     
     <기본명령어>
     
     docker-compose up -d	컨테이너 최초 실행 또는 재실행 (필요시 재생성 포함)
-    <br> docker ps 실행중인 컨테이너 확인
-    <br> docker start <컨테이너명>	이미 생성된 컨테이너를 다시 시작할 때 사용
-    <br> docker ps -a	정지된 컨테이너 목록 포함 전체 컨테이너 확인
-    <br> docker logs <컨테이너명>	컨테이너 로그 확인해서 정상 작동 여부 체크
+    docker ps 실행중인 컨테이너 확인
+    docker start <컨테이너명>	이미 생성된 컨테이너를 다시 시작할 때 사용
+    docker ps -a	정지된 컨테이너 목록 포함 전체 컨테이너 확인
+    docker logs <컨테이너명>	컨테이너 로그 확인해서 정상 작동 여부 체크
 </details>
 
 <details>
   <summary>pgAdmin에서 PostgreSQL 서버 연결하는 방법</summary>
 
-### ✅ pgAdmin에서 서버 추가
-
-1. 첫 화면에서 새 서버 추가
-2. 팝업창 뜨면 아래처럼 채우기:
-
----
-
-### 🧩 General 탭
-
-| 항목 | 값 |
-|------|----|
-| Name | `local-postgres` (자유롭게) |
-
----
-
-### 🔌 Connection 탭
-
-| 항목 | 값 |
-|------|----|
-| Host name/address | `db` ← **중요! docker-compose 안에서 db 컨테이너 이름 사용** |
-| Port | `5432` |
-| Maintenance database | `${POSTGRES_DB}` 예: `mydb` |
-| Username | `${POSTGRES_USER}` 예: `postgres` 또는 `myapp` |
-| Password | `${POSTGRES_PASSWORD}` 예: `secret123` |
-| Save Password | ✅ 체크 |
-
-※ 위 값들은 `.env` 파일 또는 `docker-compose.yml`의 `environment:` 아래 설정한 값.
-
-
-## 🔗 연결 후
-
-1. 왼쪽 트리에서 방금 만든 `local-postgres` 클릭
-2. `Databases > mydb > Schemas > public > Tables` 로 내려가면
-3. 스키마, 테이블 등 구조 확인 가능
+  ### ✅ pgAdmin에서 서버 추가
+  
+  1. 첫 화면에서 새 서버 추가
+  2. 팝업창 뜨면 General(일반) 탭에서 이름 항목 자유롭게 채우기. ex) local-postgres
+  
+  ---
+  
+  ### 🔌 Connection 탭
+  
+  | 항목 | 값 |
+  |------|----|
+  | Host name/address | `db` ← **중요! docker-compose 안에서 db 컨테이너 이름 사용** |
+  | Port | `5432` |
+  | Maintenance database | `${POSTGRES_DB}` 예: `mydb` |
+  | Username | `${POSTGRES_USER}` 예: `postgres` 또는 `myapp` |
+  | Password | `${POSTGRES_PASSWORD}` 예: `secret123` |
+  | Save Password | ✅ 체크 |
+  
+  ※ 위 값들은 `.env` 파일 또는 `docker-compose.yml`의 `environment:` 아래 설정한 값.
+  
+  
+  ## 🔗 연결 후
+  
+  1. 왼쪽 트리에서 방금 만든 `local-postgres` 클릭
+  2. `Databases > mydb > Schemas > public > Tables` 로 내려가면
+  3. 스키마, 테이블 등 구조 확인 가능
 
 </details>
 
