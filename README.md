@@ -65,6 +65,7 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 
 <details>
   <summary>mysql, postgre 차이점</summary>
+  <br>
     
   | 항목 | MySQL | PostgreSQL |
   |------|-------|-------------|
