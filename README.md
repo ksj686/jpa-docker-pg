@@ -37,14 +37,12 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 <details>
   <summary>pgAdmin에서 PostgreSQL 서버 연결하는 방법</summary>
 
-    ### ✅ pgAdmin에서 서버 추가
+    ✅ pgAdmin에서 서버 추가
     
     1. 첫 화면에서 새 서버 추가
     2. 팝업창 뜨면 General(일반) 탭에서 이름 항목 자유롭게 채우기. ex) local-postgres
     
-    ---
-    
-    ### 🔌 Connection 탭
+    🔌 Connection 탭
     
     | 항목 | 값 |
     |------|----|
@@ -56,9 +54,8 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
     | Save Password | ✅ 체크 |
     
     ※ 위 값들은 `.env` 파일 또는 `docker-compose.yml`의 `environment:` 아래 설정한 값.
-    
-    
-    ## 🔗 연결 후
+        
+    🔗 연결 후
     
     1. 왼쪽 트리에서 방금 만든 `local-postgres` 클릭
     2. `Databases > mydb > Schemas > public > Tables` 로 내려가면
@@ -69,17 +66,15 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 <details>
   <summary>mysql, postgre 차이점</summary>
 
-## ❗차이점 설명
-
-| 항목 | MySQL | PostgreSQL |
-|------|-------|-------------|
-| 사용자 접속 제어 | `'user'@'localhost'`, `'user'@'%'` | **PostgreSQL은 `pg_hba.conf`로 제어** |
-| 문자셋 지정 | `CHARACTER SET utf8mb4` | PostgreSQL은 기본이 UTF-8 (지정 필요 거의 없음) |
-| 권한 부여 방식 | `GRANT ... ON db.*` | `GRANT ... ON DATABASE db` |
-
-> PostgreSQL은 호스트 구분 없이 `pg_hba.conf` 파일에서 접속 방식 설정하므로, SQL 자체에는 `'@localhost'` 같은 구문이 없음.
-
----
+    ## ❗차이점 설명
+  
+    | 항목 | MySQL | PostgreSQL |
+    |------|-------|-------------|
+    | 사용자 접속 제어 | `'user'@'localhost'`, `'user'@'%'` | **PostgreSQL은 `pg_hba.conf`로 제어** |
+    | 문자셋 지정 | `CHARACTER SET utf8mb4` | PostgreSQL은 기본이 UTF-8 (지정 필요 거의 없음) |
+    | 권한 부여 방식 | `GRANT ... ON db.*` | `GRANT ... ON DATABASE db` |
+    
+    > PostgreSQL은 호스트 구분 없이 `pg_hba.conf` 파일에서 접속 방식 설정하므로, SQL 자체에는 `'@localhost'` 같은 구문이 없음.
 
 </details>
 
