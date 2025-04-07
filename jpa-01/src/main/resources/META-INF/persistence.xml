@@ -10,8 +10,9 @@
     <!-- 매핑 클래스 -->
         <class>jpabasic.reserve.domain.User</class>
         
-    <!-- list 되어지지 않은 class는 제외 -->
+    <!-- list 되어지지 않은 class를 제외할지 정하는 설정 -->
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        
         <properties>
         <!-- JDBC 드라이버 및 연결 URL -->
 		    <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
