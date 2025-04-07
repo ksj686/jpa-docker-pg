@@ -7,7 +7,10 @@
              version="3.0">
 
     <persistence-unit name="app_db" transaction-type="RESOURCE_LOCAL">
+    <!-- 매핑 클래스 -->
         <class>jpabasic.reserve.domain.User</class>
+        
+    <!-- list 되어지지 않은 class는 제외 -->
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
         <!-- JDBC 드라이버 및 연결 URL -->
