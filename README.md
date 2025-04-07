@@ -106,6 +106,6 @@ Spring JPA, Docker, PostgreSQL을 활용해보기 위한 미니 프로젝트
 
 <h2 id=3>🎯 회고</h2>
 
-- Spring 프로젝트를 Maven을 빌드 도구로, JPA를 사용한 ORM 방식으로 구성해볼 수 있었습니다.
+- Maven을 빌드 도구로, JPA를 사용한 ORM 방식으로 구성해볼 수 있었습니다.
 - PostgreSQL 데이터베이스를 사용하고, 이를 관리하기 위한 GUI 도구로 pgAdmin을 활용해볼 수 있었습니다.
 - 별도의 로컬 설치 없이 Docker를 활용해 데이터베이스와 pgAdmin 환경을 동시에 구성해볼 수 있었습니다.
